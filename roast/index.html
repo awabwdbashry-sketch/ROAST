@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+<title>ROAST — من الحبة إلى اللحظة</title>
+<meta name="description" content="ROAST — تجربة قهوة فاخرة. من الحبة إلى اللحظة.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Arabic:wght@200;300;400;500;600;700&family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;1,400&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<!-- ============ LOADER ============ -->
+<div class="loader" id="loader">
+  <div class="loader-inner">
+    <div class="loader-mark">ROAST</div>
+    <div class="loader-bar-track">
+      <div class="loader-bar-fill" id="loaderBarFill"></div>
+    </div>
+    <div class="loader-percent" id="loaderPercent">00%</div>
+  </div>
+</div>
+
+<!-- ============ CURSOR ============ -->
+<div class="cursor" id="cursor">
+  <span class="cursor-label" id="cursorLabel"></span>
+</div>
+
+<!-- ============ NAV ============ -->
+<header class="nav" id="nav">
+  <nav class="nav-inner">
+    <a href="#hero" class="nav-brand">ROAST</a>
+    <ul class="nav-links">
+      <li><a href="#hero" data-cursor="عرض">الرئيسية</a></li>
+      <li><a href="#sequence" data-cursor="عرض">التجربة</a></li>
+      <li><a href="#details" data-cursor="عرض">التفاصيل</a></li>
+      <li><a href="#ritual" data-cursor="عرض">الحكاية</a></li>
+    </ul>
+    <a href="#final" class="nav-cta" data-cursor="اذهب">اكتشف ROAST</a>
+    <button class="nav-toggle" id="navToggle" aria-label="القائمة">
+      <span></span><span></span>
+    </button>
+  </nav>
+</header>
+
+<main id="top">
+
+  <!-- ============ 01 HERO ============ -->
+  <section class="hero" id="hero">
+    <div class="hero-media">
+      <img src="assets/images/gallery/gal-08-moment.jpg" alt="ROAST" class="hero-img">
+      <div class="hero-veil"></div>
+    </div>
+    <div class="hero-content">
+      <p class="hero-eyebrow">تجربة قهوة فاخرة</p>
+      <h1 class="hero-title">من الحبة<br>إلى اللحظة.</h1>
+      <p class="hero-sub">قهوة تُصنع بصمت، وتُروى ببطء.</p>
+    </div>
+    <div class="scroll-indicator">
+      <span class="scroll-line"></span>
+      <span class="scroll-word">مرر للأسفل</span>
+    </div>
+  </section>
+
+  <!-- ============ 02 THE SEQUENCE ============ -->
+  <section class="sequence-section" id="sequence">
+    <div class="sequence-sticky">
+
+      <div class="sequence-canvas">
+        <img src="assets/images/sequence/seq-01.jpg" class="seq-layer seq-layer-a" id="seqLayerA" alt="">
+        <img src="assets/images/sequence/seq-01.jpg" class="seq-layer seq-layer-b" id="seqLayerB" alt="">
+        <div class="sequence-vignette"></div>
+      </div>
+
+      <div class="orbit-ring" id="orbitRing" aria-hidden="true">
+        <svg viewBox="0 0 100 100" class="orbit-svg">
+          <circle cx="50" cy="50" r="46" class="orbit-track"/>
+          <circle cx="50" cy="50" r="46" class="orbit-progress" id="orbitProgress"/>
+        </svg>
+        <span class="orbit-dot" id="orbitDot"></span>
+      </div>
+
+      <div class="sequence-text">
+        <div class="sequence-stage" id="stageIndex">01</div>
+        <h2 class="sequence-title" id="stageTitle">البداية</h2>
+        <p class="sequence-line" id="stageLine">كل شيء يبدأ من الحبة.</p>
+      </div>
+
+      <div class="sequence-progress">
+        <span id="progressCurrent">01</span>
+        <span class="progress-sep">/</span>
+        <span>10</span>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ============ 03 BRAND STATEMENT ============ -->
+  <section class="statement" id="statement">
+    <p class="statement-lead reveal">ليست مجرد قهوة.</p>
+    <p class="statement-body reveal">إنها طقس صغير<br>يستحق أن تتمهّل من أجله.</p>
+  </section>
+
+  <!-- ============ 04 GALLERY ============ -->
+  <section class="gallery" id="gallery">
+    <div class="gallery-head reveal">
+      <p class="section-eyebrow">المعرض</p>
+      <h2 class="section-title">لحظات مختارة</h2>
+    </div>
+
+    <div class="gallery-grid">
+
+      <figure class="g-item g-full reveal">
+        <img src="assets/images/gallery/gal-07-ritual.jpg" alt="طقس التحضير" loading="lazy">
+        <figcaption>الطقس يبدأ قبل الكوب.</figcaption>
+      </figure>
+
+      <figure class="g-item g-half reveal">
+        <img src="assets/images/gallery/gal-01-bean.jpg" alt="الحبة" loading="lazy">
+        <figcaption>الحبة</figcaption>
+      </figure>
+
+      <figure class="g-item g-half g-text reveal">
+        <p class="g-quote">"في كل حبة، رحلة طويلة<br>تنتهي في كوبك."</p>
+      </figure>
+
+      <figure class="g-item g-tall reveal">
+        <img src="assets/images/gallery/gal-02-grind.jpg" alt="الطحن" loading="lazy">
+        <figcaption>الطحن</figcaption>
+      </figure>
+
+      <figure class="g-item g-wide reveal">
+        <img src="assets/images/gallery/gal-03-pour.jpg" alt="الاستخلاص" loading="lazy">
+        <figcaption>الاستخلاص</figcaption>
+      </figure>
+
+      <figure class="g-item g-half reveal">
+        <img src="assets/images/gallery/gal-05-crema.jpg" alt="الطبقة" loading="lazy">
+        <figcaption>الطبقة الذهبية</figcaption>
+      </figure>
+
+      <figure class="g-item g-half reveal">
+        <img src="assets/images/gallery/gal-04-cup.jpg" alt="الكوب" loading="lazy">
+        <figcaption>الكوب</figcaption>
+      </figure>
+
+    </div>
+  </section>
+
+  <!-- ============ 05 THE RITUAL ============ -->
+  <section class="ritual" id="ritual">
+    <div class="ritual-media reveal">
+      <img src="assets/images/gallery/gal-06-steam.jpg" alt="لحظة البخار" loading="lazy">
+    </div>
+    <div class="ritual-content">
+      <p class="section-eyebrow reveal">الحكاية</p>
+      <h2 class="ritual-title reveal">الوقت لا يُقاس هنا<br>بالدقائق.</h2>
+      <p class="ritual-sub reveal">بل باللحظة.</p>
+      <p class="ritual-body reveal">
+        بين الحبة الأولى وآخر رشفة، هناك وقفة صغيرة نتعمّد صنعها.
+        ROAST لا تسعى للسرعة، بل للحضور الكامل في التفاصيل التي
+        عادة ما نمرّ بها دون أن نراها.
+      </p>
+    </div>
+  </section>
+
+  <!-- ============ 06 DETAILS ============ -->
+  <section class="details" id="details">
+    <div class="details-head reveal">
+      <p class="section-eyebrow">التفاصيل</p>
+      <h2 class="section-title">ما لا يُرى بالعين وحدها</h2>
+    </div>
+
+    <div class="details-row reveal">
+      <div class="detail-media">
+        <img src="assets/images/sequence/seq-03.jpg" alt="حبوب محمّصة" loading="lazy">
+      </div>
+      <div class="detail-copy">
+        <span class="detail-num">01</span>
+        <h3>الحبوب</h3>
+        <p>لون داكن، رائحة عميقة، وسطح يعكس الضوء بهدوء. كل حبة تحمل قصة تحميص دقيقة.</p>
+      </div>
+    </div>
+
+    <div class="details-row details-row-rev reveal">
+      <div class="detail-media">
+        <img src="assets/images/gallery/gal-02-grind.jpg" alt="القهوة المطحونة" loading="lazy">
+      </div>
+      <div class="detail-copy">
+        <span class="detail-num">02</span>
+        <h3>الطحن</h3>
+        <p>نسيج ناعم يطلق العطر قبل أن يلامس الماء. التفاصيل الصغيرة هنا تصنع الفرق كله.</p>
+      </div>
+    </div>
+
+    <div class="details-row reveal">
+      <div class="detail-media">
+        <img src="assets/images/gallery/gal-05-crema.jpg" alt="الطبقة الذهبية" loading="lazy">
+      </div>
+      <div class="detail-copy">
+        <span class="detail-num">03</span>
+        <h3>الطبقة</h3>
+        <p>فقاعات دقيقة تتشكل فوق السطح، إشارة صامتة إلى استخلاص متقن.</p>
+      </div>
+    </div>
+
+    <div class="details-row details-row-rev reveal">
+      <div class="detail-media">
+        <img src="assets/images/gallery/gal-06-steam.jpg" alt="البخار" loading="lazy">
+      </div>
+      <div class="detail-copy">
+        <span class="detail-num">04</span>
+        <h3>البخار</h3>
+        <p>خيوط رقيقة ترتفع بهدوء، أول إشارة إلى أن اللحظة باتت جاهزة.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ 07 FINAL EXPERIENCE ============ -->
+  <section class="final" id="final">
+    <div class="final-media">
+      <img src="assets/images/gallery/gal-08-moment.jpg" alt="اللحظة الأخيرة">
+      <div class="final-veil"></div>
+    </div>
+    <div class="final-content">
+      <h2 class="final-title reveal">خذ لحظتك.</h2>
+      <div class="final-brand reveal">
+        <span class="final-brand-name">ROAST</span>
+        <span class="final-brand-tag">من الحبة إلى اللحظة.</span>
+      </div>
+      <a href="#hero" class="final-cta reveal" data-cursor="ابدأ">ابدأ التجربة من جديد</a>
+    </div>
+  </section>
+
+  <!-- ============ FOOTER ============ -->
+  <footer class="footer">
+    <span class="footer-brand">ROAST</span>
+    <p class="footer-line">تجربة قهوة فاخرة — من الحبة إلى اللحظة.</p>
+  </footer>
+
+</main>
+
+<script src="js/sequence.js"></script>
+<script src="js/animations.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>
