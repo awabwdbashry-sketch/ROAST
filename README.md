@@ -72,7 +72,7 @@ index.html
 
 ## 👨‍💻 المطور
 
-**Awab Wd Bashry**
+**Awab Bashary | AwabBuilds**
 
 GitHub:
 `awabwdbashry-sketch`
@@ -157,7 +157,7 @@ The project includes:
 
 ## 👨‍💻 Developer
 
-**Awab Wd Bashry**
+**Awab Bashary | AwabBuilds**
 
 GitHub:
 `awabwdbashry-sketch`
